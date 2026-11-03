@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" role="img" aria-label="MultiLingua ASR logo">
+  <defs>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbfaf6"/>
+      <stop offset="100%" stop-color="#f2efe7"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="220" fill="url(#paper)"/>
+  <g transform="translate(72,36)">
+    <rect x="0" y="0" width="148" height="148" rx="24" fill="#171a22" opacity="0.06"/>
+    <rect x="8" y="8" width="132" height="132" rx="20" fill="#171a22"/>
+    <g transform="translate(8,8)">
+
+    <path d="M16 40 H116" stroke="#10b981" stroke-width="4" stroke-linecap="round" fill="none" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" values="100;0;100" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M16 62 H116" stroke="#06b6d4" stroke-width="4" stroke-linecap="round" fill="none" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" values="100;0;100" dur="3s" begin="0.35s" repeatCount="indefinite"/>
+    </path>
+    <path d="M16 84 H116" stroke="#f2efe7" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" values="100;0;100" dur="3s" begin="0.7s" repeatCount="indefinite"/>
+    </path>
+
+      <text x="66" y="92" text-anchor="middle" fill="#fbfaf6" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="500" font-style="italic">M</text>
+      <circle cx="116" cy="28" r="8" fill="#10b981">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  <text x="260" y="98" fill="#171a22" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500" font-style="italic" letter-spacing="-0.02em">MultiLingua ASR</text>
+  <text x="262" y="132" fill="#71766f" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="0.18em">CODE-SWITCH SPEECH INTO ONE TRANSCRIPT</text>
+  <rect x="260" y="148" width="0" height="3" rx="1.5" fill="#10b981">
+    <animate attributeName="width" values="0;420;420;0" keyTimes="0;0.45;0.75;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="260" y="178" fill="#454a44" font-family="system-ui, -apple-system, sans-serif" font-size="15">RLVR ASR across eight language pairs.</text>
+</svg>

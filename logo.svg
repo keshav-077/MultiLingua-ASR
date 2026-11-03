@@ -1,144 +1,37 @@
-<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" role="img" aria-label="MultiLingua ASR logo">
   <defs>
-    <linearGradient id="mlGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1">
-        <animate attributeName="stop-color" values="#10b981;#06b6d4;#10b981" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1">
-        <animate attributeName="stop-color" values="#06b6d4;#3b82f6;#06b6d4" dur="4s" repeatCount="indefinite"/>
-      </stop>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbfaf6"/>
+      <stop offset="100%" stop-color="#f2efe7"/>
     </linearGradient>
-    <linearGradient id="mlGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1"/>
-      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1"/>
-    </linearGradient>
-    <filter id="mlGlow">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
-  
-  <!-- Rotating background ring -->
-  <circle cx="200" cy="200" r="160" fill="none" stroke="url(#mlGrad1)" 
-          stroke-width="2" opacity="0.3" stroke-dasharray="10 5">
-    <animateTransform attributeName="transform" type="rotate" 
-                      values="0 200 200;360 200 200" dur="20s" repeatCount="indefinite"/>
-  </circle>
-  
-  <!-- Globe/World representation -->
-  <g transform="translate(200, 200)" filter="url(#mlGlow)">
-    <!-- Main globe circle -->
-    <circle r="90" fill="none" stroke="url(#mlGrad1)" stroke-width="3">
-      <animate attributeName="r" values="90;93;90" dur="3s" repeatCount="indefinite"/>
-    </circle>
-    
-    <!-- Latitude lines -->
-    <ellipse cx="0" cy="0" rx="90" ry="30" fill="none" stroke="url(#mlGrad1)" 
-             stroke-width="2" opacity="0.6"/>
-    <ellipse cx="0" cy="0" rx="90" ry="60" fill="none" stroke="url(#mlGrad1)" 
-             stroke-width="2" opacity="0.6"/>
-    
-    <!-- Longitude lines with rotation -->
-    <g>
-      <ellipse cx="0" cy="0" rx="30" ry="90" fill="none" stroke="url(#mlGrad1)" 
-               stroke-width="2" opacity="0.6">
-        <animateTransform attributeName="transform" type="rotate" 
-                          values="0;360" dur="15s" repeatCount="indefinite"/>
-      </ellipse>
-      <ellipse cx="0" cy="0" rx="60" ry="90" fill="none" stroke="url(#mlGrad1)" 
-               stroke-width="2" opacity="0.6">
-        <animateTransform attributeName="transform" type="rotate" 
-                          values="0;360" dur="15s" repeatCount="indefinite" begin="5s"/>
-      </ellipse>
-    </g>
-    
-    <!-- Language symbols orbiting -->
-    <g>
-      <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
-            fill="url(#mlGrad1)" text-anchor="middle">
-        <animateTransform attributeName="transform" type="rotate" 
-                          values="0 0 0;360 0 0" dur="10s" repeatCount="indefinite"/>
-        <tspan x="0" y="-100">A</tspan>
-      </text>
-    </g>
-    <g>
-      <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
-            fill="url(#mlGrad1)" text-anchor="middle">
-        <animateTransform attributeName="transform" type="rotate" 
-                          values="120 0 0;480 0 0" dur="10s" repeatCount="indefinite"/>
-        <tspan x="0" y="-100">あ</tspan>
-      </text>
-    </g>
-    <g>
-      <text font-family="Arial, sans-serif" font-size="24" font-weight="bold" 
-            fill="url(#mlGrad1)" text-anchor="middle">
-        <animateTransform attributeName="transform" type="rotate" 
-                          values="240 0 0;600 0 0" dur="10s" repeatCount="indefinite"/>
-        <tspan x="0" y="-100">ا</tspan>
-      </text>
-    </g>
-    
-    <!-- Audio waveform in center -->
-    <g opacity="0.8">
-      <rect x="-40" y="-3" width="8" height="6" fill="url(#mlGrad2)" rx="2">
-        <animate attributeName="height" values="6;20;6" dur="1s" repeatCount="indefinite"/>
-        <animate attributeName="y" values="-3;-10;-3" dur="1s" repeatCount="indefinite"/>
-      </rect>
-      <rect x="-25" y="-3" width="8" height="6" fill="url(#mlGrad2)" rx="2">
-        <animate attributeName="height" values="6;30;6" dur="1s" repeatCount="indefinite" begin="0.1s"/>
-        <animate attributeName="y" values="-3;-15;-3" dur="1s" repeatCount="indefinite" begin="0.1s"/>
-      </rect>
-      <rect x="-10" y="-3" width="8" height="6" fill="url(#mlGrad2)" rx="2">
-        <animate attributeName="height" values="6;25;6" dur="1s" repeatCount="indefinite" begin="0.2s"/>
-        <animate attributeName="y" values="-3;-12.5;-3" dur="1s" repeatCount="indefinite" begin="0.2s"/>
-      </rect>
-      <rect x="5" y="-3" width="8" height="6" fill="url(#mlGrad2)" rx="2">
-        <animate attributeName="height" values="6;28;6" dur="1s" repeatCount="indefinite" begin="0.3s"/>
-        <animate attributeName="y" values="-3;-14;-3" dur="1s" repeatCount="indefinite" begin="0.3s"/>
-      </rect>
-      <rect x="20" y="-3" width="8" height="6" fill="url(#mlGrad2)" rx="2">
-        <animate attributeName="height" values="6;18;6" dur="1s" repeatCount="indefinite" begin="0.4s"/>
-        <animate attributeName="y" values="-3;-9;-3" dur="1s" repeatCount="indefinite" begin="0.4s"/>
-      </rect>
-      <rect x="35" y="-3" width="8" height="6" fill="url(#mlGrad2)" rx="2">
-        <animate attributeName="height" values="6;22;6" dur="1s" repeatCount="indefinite" begin="0.5s"/>
-        <animate attributeName="y" values="-3;-11;-3" dur="1s" repeatCount="indefinite" begin="0.5s"/>
-      </rect>
+  <rect width="960" height="220" fill="url(#paper)"/>
+  <g transform="translate(72,36)">
+    <rect x="0" y="0" width="148" height="148" rx="24" fill="#171a22" opacity="0.06"/>
+    <rect x="8" y="8" width="132" height="132" rx="20" fill="#171a22"/>
+    <g transform="translate(8,8)">
+
+    <path d="M16 40 H116" stroke="#10b981" stroke-width="4" stroke-linecap="round" fill="none" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" values="100;0;100" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M16 62 H116" stroke="#06b6d4" stroke-width="4" stroke-linecap="round" fill="none" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" values="100;0;100" dur="3s" begin="0.35s" repeatCount="indefinite"/>
+    </path>
+    <path d="M16 84 H116" stroke="#f2efe7" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" stroke-dasharray="100" stroke-dashoffset="100">
+      <animate attributeName="stroke-dashoffset" values="100;0;100" dur="3s" begin="0.7s" repeatCount="indefinite"/>
+    </path>
+
+      <text x="66" y="92" text-anchor="middle" fill="#fbfaf6" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="500" font-style="italic">M</text>
+      <circle cx="116" cy="28" r="8" fill="#10b981">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="7;9;7" dur="2s" repeatCount="indefinite"/>
+      </circle>
     </g>
   </g>
-  
-  <!-- Connecting dots animation -->
-  <g opacity="0.4">
-    <circle cx="100" cy="150" r="3" fill="url(#mlGrad1)">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="300" cy="150" r="3" fill="url(#mlGrad1)">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-    </circle>
-    <circle cx="100" cy="250" r="3" fill="url(#mlGrad1)">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="1s"/>
-    </circle>
-    <circle cx="300" cy="250" r="3" fill="url(#mlGrad1)">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="1.5s"/>
-    </circle>
-    <line x1="100" y1="150" x2="300" y2="150" stroke="url(#mlGrad1)" stroke-width="1"/>
-    <line x1="100" y1="250" x2="300" y2="250" stroke="url(#mlGrad1)" stroke-width="1"/>
-    <line x1="100" y1="150" x2="100" y2="250" stroke="url(#mlGrad1)" stroke-width="1"/>
-    <line x1="300" y1="150" x2="300" y2="250" stroke="url(#mlGrad1)" stroke-width="1"/>
-  </g>
-  
-  <!-- Text -->
-  <text x="200" y="320" font-family="Arial, sans-serif" font-size="42" font-weight="bold" 
-        fill="url(#mlGrad1)" text-anchor="middle">
-    MultiLingua ASR
-    <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
-  </text>
-  <text x="200" y="350" font-family="Arial, sans-serif" font-size="16" 
-        fill="#666" text-anchor="middle" opacity="0.8">
-    Code-Switching Speech Recognition
-  </text>
+  <text x="260" y="98" fill="#171a22" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500" font-style="italic" letter-spacing="-0.02em">MultiLingua ASR</text>
+  <text x="262" y="132" fill="#71766f" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="0.18em">CODE-SWITCH SPEECH INTO ONE TRANSCRIPT</text>
+  <rect x="260" y="148" width="0" height="3" rx="1.5" fill="#10b981">
+    <animate attributeName="width" values="0;420;420;0" keyTimes="0;0.45;0.75;1" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="260" y="178" fill="#454a44" font-family="system-ui, -apple-system, sans-serif" font-size="15">RLVR ASR across eight language pairs.</text>
 </svg>
